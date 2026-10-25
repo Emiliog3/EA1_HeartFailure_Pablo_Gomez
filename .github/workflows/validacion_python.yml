@@ -1,0 +1,43 @@
+name: Validación básica de Python
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Revisar sintaxis de las clases
+        run: |
+          python -m py_compile hf_dataset_loader.py dataset_summarizer.py
+
+      - name: Probar la clase de resumen con un DataFrame pequeño
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          from dataset_summarizer import DatasetSummarizer
+
+          prueba = pd.DataFrame({"edad": [40, 55], "diabetes": [0, 1]})
+          texto = DatasetSummarizer(prueba).construir_resumen()
+          assert "Filas: 2" in texto
+          assert "Columnas: 2" in texto
+          print("Validación básica completada correctamente.")
+          PY
