@@ -1,0 +1,23 @@
+RESUMEN DEL DATAFRAME TRANSFORMADO
+========================================
+Filas: 299
+Columnas: 15
+Valores nulos totales: 0
+
+DETALLE DE COLUMNAS
+----------------------------------------
+1. edad | tipo: int64 | nulos: 0
+2. anemia | tipo: int64 | nulos: 0
+3. cpk | tipo: float64 | nulos: 0
+4. diabetes | tipo: int64 | nulos: 0
+5. fraccion_eyeccion | tipo: float64 | nulos: 0
+6. hipertension | tipo: int64 | nulos: 0
+7. plaquetas | tipo: float64 | nulos: 0
+8. creatinina_serica | tipo: float64 | nulos: 0
+9. sodio_serico | tipo: float64 | nulos: 0
+10. sexo_masculino | tipo: int64 | nulos: 0
+11. fumador | tipo: int64 | nulos: 0
+12. dias_seguimiento | tipo: int64 | nulos: 0
+13. fallecio | tipo: int64 | nulos: 0
+14. grupo_edad | tipo: object | nulos: 0
+15. seguimiento_mayor_100_dias | tipo: int64 | nulos: 0
