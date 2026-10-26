@@ -1,5 +1,17 @@
 # EA1 - Carga y creación de dataset de salud
 
+[![GitHub Actions](https://github.com/Emiliog3/EA1_HeartFailure_Pablo_Gomez/actions/workflows/validacion_python.yml/badge.svg)](https://github.com/Emiliog3/EA1_HeartFailure_Pablo_Gomez/actions/workflows/validacion_python.yml)
+[![Ejecutar en Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Emiliog3/EA1_HeartFailure_Pablo_Gomez/main?urlpath=/tree/PABLO_GOMEZ_EA1_CARGA_DATASET.ipynb)
+
+### Ejecución y verificación pública
+
+Este repositorio permite dos formas de comprobar el funcionamiento del proyecto:
+
+- **GitHub Actions:** muestra la ejecución automática realizada en un entorno limpio de GitHub y permite revisar cada etapa de validación.
+- **Binder:** permite a cualquier persona abrir y ejecutar el notebook en línea sin instalar Python, sin descargar el proyecto y sin ingresar a la cuenta del propietario.
+
+Para ejecutar el trabajo de forma interactiva, seleccione **Ejecutar en Binder**. Cuando el entorno termine de cargar, abra el notebook y utilice **Run All Cells** para reproducir el flujo completo.
+
 **Proyecto Integrado III - Analítica de Datos**  
 **Estudiante:** Pablo Emilio Gómez Gómez  
 **Docente:** Andrés Felipe Callejas Jaramillo  
